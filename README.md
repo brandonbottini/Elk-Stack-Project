@@ -50,7 +50,7 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 - Public IP address: Add whitelisted IP addresses
 
 Machines within the network can only be accessed by ssh.
--: The machine that can access the ELK VM is through the jump-box. The private ip address of the jump-box is 10.0.0.4.
+- The machine that can access the ELK VM is through the jump-box. The private ip address of the jump-box is 10.0.0.4.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -64,7 +64,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _: The main advantage of using automating configuration with Ansible is that all the machines to be configurd in the same way._
+- _The main advantage of using automating configuration with Ansible is that all the machines to be configurd in the same way._
 
 The playbook [Install-Elk](Ansible/Install-elk.yml) implements the following tasks:
 - Sets maximum map count
