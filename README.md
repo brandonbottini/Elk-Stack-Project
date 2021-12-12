@@ -75,7 +75,7 @@ The playbook _Install-Elk: https://github.com/brandonbottini/Files-from-Cyber-Se
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![https://github.com/brandonbottini/Files-from-Cyber-Security-Class/blob/main/Images/Elk%20Stack%20Docker.png
+![https://github.com/brandonbottini/Files-from-Cyber-Security-Class/blob/main/Images/Elk%20Stack%20Docker.png]
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
