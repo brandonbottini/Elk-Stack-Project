@@ -66,7 +66,7 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - _: The main advantage of using automating configuration with Ansible is that all the machines to be configurd in the same way._
 
-The playbook _Install-Elk: ![](Ansible/Install-elk.yml) implements the following tasks:
+The [playbook _Install-Elk](Ansible/Install-elk.yml) implements the following tasks:
 - Sets maximum map count
 - Install docker.io
 - Install pip3
@@ -75,7 +75,7 @@ The playbook _Install-Elk: ![](Ansible/Install-elk.yml) implements the following
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![https://github.com/brandonbottini/Files-from-Cyber-Security-Class/blob/main/Images/Elk%20Stack%20Docker.png]
+![](Images/Elk%20Stack%20Docker.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -84,7 +84,7 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 
-Filebeat [https://github.com/brandonbottini/Files-from-Cyber-Security-Class/blob/main/Ansible/filebeat-playbook.yml] and Metricbeat [https://github.com/brandonbottini/Files-from-Cyber-Security-Class/blob/main/Ansible/metricbeat-playbook.yml]
+[Filebeat](Ansible/filebeat-playbook.yml) and [Metricbeat](Ansible/metricbeat-playbook.yml)
 
 These Beats allow us to collect the following information from each machine:
 - _Filebeat monitors logs on the machine and sends the data off to Elasticsearch. For example the filebeat would look at audit logs to relay these logs to the elk-stack machine._
