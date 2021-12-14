@@ -98,3 +98,16 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml file to /etc/ansible/files.
 - Update the [host](Ansible/hosts) file to include the ip address of the webservers and the elk-stack. 
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
+
+
+Here are the commands you would need to run in GitBash to download and run my ansible playbooks.
+-Open git bash, then ssh azadmin@jump box ip              <----------(My Azure jump-box)
+-sudo docker container list -a                                            <----------(my container name is:boring_raman)
+-sudo docker start amazing_snyder                                      <----------(start my container)
+-docker attach amazing_snyder                                            <----------(attach my container)
+-cd /etc/ansible/                                                                <----------(to work under ansible file)
+-Create a playbook file                                                       <----------(use touch to create a nano playbook file)
+-nano hosts                                                                          <----------(update ip on [webservers][elk] Example:10.1.0.4 ansible_python_interpeter=/usr/bin/python3
+-nano ansible.cfg                                                                <----------(add remote_user=azadmin to which server you want to use)
+-run ansible-playbook my-playbook.yml                         <----------(ansible-playbook is the command to run the file)
+
