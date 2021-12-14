@@ -100,12 +100,12 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
 Commands to run install [Elk Stack](Ansible/Install-elk.yml) Container
--Open git bash, then ssh azadmin@jump box ip <----------(My Azure jump-box)
--sudo docker container list -a               <----------(my container name is:boring_raman)
--sudo docker start boring_raman              <----------(start my container)
--docker attach boring_raman                  <----------(attach my container)
--cd /etc/ansible/                            <----------(to work under ansible file)
--Create a playbook file                      <----------(use touch to create a nano playbook file)
--nano hosts                                  <----------(update ip on [webservers][elk][elkservers] Example:10.1.0.4 ansible_python_interpeter=/usr/bin/python3
--nano ansible.cfg                            <----------(add remote_user=azadmin to which server you want to use)
--run ansible-playbook my-playbook.yml        <----------(ansible-playbook is the command to run the file)
+-_Open git bash, then ssh azadmin@jump box ip <----------(My Azure jump-box)_
+-_sudo docker container list -a               <----------(my container name is:boring_raman)_
+-_sudo docker start boring_raman              <----------(start my container)_
+-_docker attach boring_raman                  <----------(attach my container)_
+-_cd /etc/ansible/                            <----------(to work under ansible file)_
+-_Create a playbook file                      <----------(use touch to create a nano playbook file)_
+-_nano hosts                                  <----------(update ip on [webservers][elk] Example:10.1.0.4 ansible_python_interpeter=/usr/bin/python3_
+-_nano ansible.cfg                            <----------(add remote_user=azadmin to which server you want to use)_
+-_run ansible-playbook my-playbook.yml        <----------(ansible-playbook is the command to run the file)_
