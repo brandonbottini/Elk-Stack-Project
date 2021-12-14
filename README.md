@@ -99,7 +99,7 @@ SSH into the control node and follow the steps below:
 - Update the [host](Ansible/hosts) file to include the ip address of the webservers and the elk-stack. 
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
-Commands to run install [Elk Stack](Ansible/Install-elk.yml) Container
+Commands to run install [Elk Stack](Ansible/Install-elk.yml) Container:
 -_Open git bash, then ssh azadmin@jump box ip <----------(My Azure jump-box)_
 -_sudo docker container list -a               <----------(my container name is:boring_raman)_
 -_sudo docker start boring_raman              <----------(start my container)_
